@@ -8,6 +8,7 @@ import androidx.lifecycle.Observer;
 
 import com.jeremyliao.liveeventbus.LiveEventBus;
 
+
 public class LiveDataObserver {
 
     private static LiveDataObserver instance;

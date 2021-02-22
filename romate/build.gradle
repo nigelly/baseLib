@@ -30,7 +30,7 @@ android {
 
 dependencies {
 
-   // implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
 
     implementation 'com.jeremyliao:live-event-bus:1.7.3'
 

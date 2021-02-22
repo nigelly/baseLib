@@ -46,7 +46,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
    // implementation project(':romate')
-    implementation 'com.github.nigelly:baseLib:v1.0.1'
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'io.github.froyohuang:replugin-host-lib-androidx:2.3.3.0'

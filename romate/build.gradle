@@ -31,7 +31,10 @@ android {
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
+//    implementation 'com.android.support:appcompat-v7:27.1.1'
 
     implementation 'com.jeremyliao:live-event-bus:1.7.3'
+    api "com.google.code.gson:gson:2.8.5"
+
 
 }

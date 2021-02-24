@@ -45,10 +45,16 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-   // implementation project(':romate')
-
+    // implementation project(':romate')
+    implementation 'com.github.nigelly:baseLib:v1.0.5'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'io.github.froyohuang:replugin-host-lib-androidx:2.3.3.0'
+
+    //换肤
+    implementation 'skin.support:skin-support:4.0.5'                   // skin-support
+    implementation 'skin.support:skin-support-appcompat:4.0.5'         // skin-support 基础控件支持
+    implementation 'skin.support:skin-support-design:4.0.5'            // skin-support-design material design 控件支持[可选]
+    implementation 'skin.support:skin-support-cardview:4.0.5'          // skin-support-cardview CardView 控件支持[可选]
+    implementation 'skin.support:skin-support-constraint-layout:4.0.5'
 }
 
-apply plugin: 'replugin-host-gradle-androidx'

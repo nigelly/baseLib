@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">VendingAppPlugin</string>
+    <string name="test_name">语言</string>
 </resources>

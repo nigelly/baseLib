@@ -5,14 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textTest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="querySlot"
         android:padding="16dp"
-        android:text="查询货道信息"
+        android:text="@string/test_name"
+        android:textSize="@dimen/test11"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

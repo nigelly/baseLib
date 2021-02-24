@@ -14,8 +14,6 @@
         android:gravity="center"
         android:onClick="querySlot"
         android:padding="16dp"
-        android:textSize="@dimen/skin_test11"
-        android:textColor="@color/skin_red"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

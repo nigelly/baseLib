@@ -3,6 +3,8 @@ package com.tcn.vendingappplugin;
 import android.content.Context;
 import android.util.AttributeSet;
 
+import com.tcn.romate.skin.SkinTextView;
+
 public class MyTextView extends SkinTextView {
     public MyTextView(Context context) {
         super(context);

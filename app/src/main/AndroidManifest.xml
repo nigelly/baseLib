@@ -21,10 +21,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
 
-                <data
-                    android:host="MainActivity"
-                    android:scheme="com.tcn.vendingappplugin"
-                    tools:ignore="AppLinkUrlError"></data>
+<!--                <data-->
+<!--                    android:host="MainActivity"-->
+<!--                    android:scheme="com.tcn.vendingappplugin"-->
+<!--                    tools:ignore="AppLinkUrlError"></data>-->
             </intent-filter>
         </activity>
 

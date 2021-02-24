@@ -1,0 +1,1 @@
+com.xxxxxxx.oobe:id/cycle_7 = 0x7f040000

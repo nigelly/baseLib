@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="600px"
+	android:layout_height="483px"
+	android:background="#ffffff">
+
+	<TextView
+		android:id="@+id/dialog_contens_text1"
+		android:layout_width="236px"
+		android:layout_height="47px"
+		android:text="登录"
+		android:textColor="#333333"
+		android:gravity="center"
+		android:textSize="36px"
+		android:layout_marginTop="90px"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<ImageView
+		android:id="@android:id/text1"
+		android:layout_width="69px"
+		android:layout_height="69px"
+		android:padding="15px"
+		android:layout_marginTop="4px"
+		android:layout_marginRight="30px"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent"/>
+
+	<TextView
+		android:id="@+id/dialog_contens_text2"
+		android:layout_width="112px"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="53px"
+		android:text="登录密码"
+		android:textColor="#333333"
+		android:textSize="28px"
+		app:layout_constraintBottom_toBottomOf="@+id/edit_set_wd"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/edit_set_wd" />
+
+	<EditText
+		android:id="@+id/edit_set_wd"
+		android:layout_width="394px"
+		android:layout_height="63px"
+		android:layout_gravity="center_vertical"
+		android:layout_marginLeft="182px"
+		android:layout_marginTop="209px"
+		android:hint="请输入"
+		android:inputType="textPassword"
+		android:paddingLeft="5dp"
+		android:textSize="28px"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+	<Button
+		android:tag="button1"
+		android:layout_width="313px"
+		android:layout_height="80px"
+		android:layout_marginTop="351px"
+		android:layout_marginLeft="224px"
+		android:layout_marginRight="224px"
+		android:textSize="28px"
+		android:text="确定"
+		android:textColor="#ffffff"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

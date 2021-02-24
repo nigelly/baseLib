@@ -47,8 +47,14 @@ dependencies {
 
    // implementation project(':romate')
 
+    implementation 'com.github.nigelly:baseLib:v1.0.5'
+
+    implementation 'com.github.sy707919626:tcnDialog:v1.0.0'
+
+
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'io.github.froyohuang:replugin-host-lib-androidx:2.3.3.0'
+
 }
 
 apply plugin: 'replugin-host-gradle-androidx'

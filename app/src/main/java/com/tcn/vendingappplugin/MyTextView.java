@@ -3,43 +3,31 @@ package com.tcn.vendingappplugin;
 import android.content.Context;
 import android.util.AttributeSet;
 
-import com.tcn.romate.skin.SkinTextView;
+import com.tcn.romate.skin.CustomTextHelper;
 
-public class MyTextView extends SkinTextView {
+import skin.support.widget.SkinCompatTextView;
+
+public class MyTextView extends SkinCompatTextView {
+    CustomTextHelper customTextHelper;
+
     public MyTextView(Context context) {
-        super(context);
+        this(context, null);
     }
 
     public MyTextView(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, android.R.attr.textViewStyle);
     }
 
     public MyTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        customTextHelper = CustomTextHelper.create(this);
+        customTextHelper.loadFromAttributes(attrs, defStyleAttr);
     }
 
     @Override
-    protected int getStringId() {
-        return R.string.skin_test_name;
-    }
-
-    @Override
-    protected int getTextSizeId() {
-        return R.dimen.skin_test11;
-    }
-
-    @Override
-    protected int getTextColorId() {
-        return R.color.skin_red;
-    }
-
-    @Override
-    protected int getTextBackgroundId() {
-        return 0;
-    }
-
-    @Override
-    protected int getTextBackgroundColorId() {
-        return R.color.skin_green;
+    public void applySkin() {
+        super.applySkin();
+        if (customTextHelper != null)
+            customTextHelper.applySkin();
     }
 }

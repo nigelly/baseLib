@@ -40,4 +40,7 @@ dependencies {
     api 'skin.support:skin-support-cardview:4.0.5'          // skin-support-cardview CardView 控件支持[可选]
     api 'skin.support:skin-support-constraint-layout:4.0.5'
 
+    api "com.google.code.gson:gson:2.8.5"
+
+
 }

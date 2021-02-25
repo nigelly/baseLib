@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.app.SkinAppCompatDelegateImpl;
 
-public class SkinActivity extends AppCompatActivity {
+public class TcnSkinActivity extends AppCompatActivity {
 
     @NonNull
     @Override

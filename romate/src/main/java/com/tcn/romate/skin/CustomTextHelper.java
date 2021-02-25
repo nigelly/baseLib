@@ -51,7 +51,6 @@ public class CustomTextHelper extends SkinCompatHelper {
 
     private void applyTextContentResource() {
         mTextContentResId = checkResourceId(mTextContentResId);
-        Log.d("print" , " id = " +mTextContentResId);
         if (mTextContentResId != INVALID_ID) {
             String skinString = Util.getSkinText(mView.getContext(), mTextContentResId);
             if (!TextUtils.isEmpty(skinString)) {

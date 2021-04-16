@@ -32,7 +32,7 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
 
-    api 'com.jeremyliao:live-event-bus:1.7.3'
+    api 'com.jeremyliao:live-event-bus-x:1.7.3'
 
     api 'skin.support:skin-support:4.0.5'                   // skin-support
     api 'skin.support:skin-support-appcompat:4.0.5'         // skin-support 基础控件支持
@@ -41,6 +41,6 @@ dependencies {
     api 'skin.support:skin-support-constraint-layout:4.0.5'
 
     api "com.google.code.gson:gson:2.8.5"
-
+    api 'com.blankj:utilcode:1.28.1'
 
 }

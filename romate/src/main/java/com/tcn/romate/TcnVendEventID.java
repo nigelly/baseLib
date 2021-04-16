@@ -632,4 +632,7 @@ public class TcnVendEventID {
     public static final int IPCAMER_VIDEO_DATA         = 1710;// 数据流返回
     public static final int IPCAMER_SET_TIME           = 1715;// 设置时间
     public static final int WXFACE_ERROR_INFO  = 1716;//微信刷脸错误信息
- }
+
+    public static final int VENDING_APP_GET_MACHINE_ID  = 1717;//售卖程序获取机器号
+
+}

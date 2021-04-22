@@ -30,4 +30,6 @@ public interface TcnDataListener {
      * @param id
      */
     void VendEventMachineId(String id);//
+
+    void VendEventGoodsInfo(List<UIGoodsInfo> data);
 }

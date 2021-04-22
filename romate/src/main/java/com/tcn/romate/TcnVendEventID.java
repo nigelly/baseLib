@@ -634,5 +634,6 @@ public class TcnVendEventID {
     public static final int WXFACE_ERROR_INFO  = 1716;//微信刷脸错误信息
 
     public static final int VENDING_APP_GET_MACHINE_ID  = 1717;//售卖程序获取机器号
+    public static final int CONTROL_TO_VEND_SHOP_GOODS  = 2104;//按商品编码展示
 
 }

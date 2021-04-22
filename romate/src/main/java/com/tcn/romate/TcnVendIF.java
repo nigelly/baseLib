@@ -56,6 +56,14 @@ public class TcnVendIF {
         }
     }
 
+    public void sendVendGoodsInfo(List<UIGoodsInfo> cEventInfo) {
+        synchronized (m_Callbacks) {
+            for (TcnDataListener c : m_Callbacks) {
+                c.VendEventGoodsInfo(cEventInfo);
+            }
+        }
+    }
+
     public void sendVendDataID(String cEventInfo) {
         synchronized (m_Callbacks) {
             for (TcnDataListener c : m_Callbacks) {

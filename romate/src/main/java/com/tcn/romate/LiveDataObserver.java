@@ -75,6 +75,10 @@ public class LiveDataObserver {
                         TcnLog.LoggerInfo(TAG, "货道信息" + jsonData);
                         ParserJsonCoilInfo(json.getAsJsonArray("json"));
                         break;
+                    case TcnVendEventID.CONTROL_TO_VEND_SHOP_GOODS:
+                        TcnLog.LoggerInfo(TAG, "商品编码货道信息" + jsonData);
+                        ParserJsonGoodsCoilInfo(json.getAsJsonArray("json"));
+                        break;
                     case TcnVendEventID.VENDING_APP_GET_MACHINE_ID:
                         String machineId = json.get("json").getAsString();
                         TcnLog.LoggerInfo(TAG, "机器号查询" + machineId);
@@ -117,6 +121,13 @@ public class LiveDataObserver {
         }.getType());
         listener.VendEventCoilInfo(dataList);
         TcnVendIF.getInstance().sendVendCoilInfo(dataList);
+    }
+
+    private void ParserJsonGoodsCoilInfo(JsonArray json) {
+        List<UIGoodsInfo> dataList = gson.fromJson(json.toString(), new TypeToken<List<UIGoodsInfo>>() {
+        }.getType());
+        listener.VendEventGoodsInfo(dataList);
+        TcnVendIF.getInstance().sendVendGoodsInfo(dataList);
     }
 
 

@@ -7,7 +7,7 @@ public class TcnLog {
 
     public static void LoggerInfo(String tag, String msg) {
         // LogUtils.aTag(tag, msg);
-        ALog.aTag(tag, msg);
+        ALog.aTag("",tag +" "+ msg);
     }
 
 }

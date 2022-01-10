@@ -111,7 +111,7 @@ public class LiveDataObserver {
             listener.VendEventInfo(vendEventInfo);
             TcnVendIF.getInstance().sendVendEventInfo(vendEventInfo);
         } catch (Exception e) {
-            TcnLog.LoggerInfo(TAG, "解析消息失败 error msg : " + e.getMessage());
+            TcnLog.LoggerInfo(TAG, "解析消息失败 error msg : " + e.getMessage() + " json " + json);
         }
     }
 

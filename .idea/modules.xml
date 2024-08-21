@@ -4,7 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/VendingAppPlugin.iml" filepath="$PROJECT_DIR$/.idea/modules/VendingAppPlugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/VendingAppPlugin.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/VendingAppPlugin.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/VendingAppPlugin.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/VendingAppPlugin.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/VendingAppPlugin.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/VendingAppPlugin.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/VendingAppPlugin.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/VendingAppPlugin.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/romate/VendingAppPlugin.romate.iml" filepath="$PROJECT_DIR$/.idea/modules/romate/VendingAppPlugin.romate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/romate/VendingAppPlugin.romate.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/romate/VendingAppPlugin.romate.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/romate/VendingAppPlugin.romate.main.iml" filepath="$PROJECT_DIR$/.idea/modules/romate/VendingAppPlugin.romate.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/romate/VendingAppPlugin.romate.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/romate/VendingAppPlugin.romate.unitTest.iml" />
     </modules>
   </component>
 </project>

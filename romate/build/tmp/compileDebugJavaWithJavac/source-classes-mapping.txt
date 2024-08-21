@@ -4,6 +4,7 @@ com/tcn/romate/LiveDataObserver.java
  com.tcn.romate.LiveDataObserver
  com.tcn.romate.LiveDataObserver$1
  com.tcn.romate.LiveDataObserver$2
+ com.tcn.romate.LiveDataObserver$3
 com/tcn/romate/TcnVendIF.java
  com.tcn.romate.TcnVendIF
 com/tcn/romate/skin/Util.java
@@ -12,6 +13,8 @@ com/tcn/romate/VendEventInfo.java
  com.tcn.romate.VendEventInfo
 com/tcn/romate/skin/TcnSkinTextView.java
  com.tcn.romate.skin.TcnSkinTextView
+com/tcn/romate/UIGoodsInfo.java
+ com.tcn.romate.UIGoodsInfo
 com/tcn/romate/skin/CustomSDCardLoader.java
  com.tcn.romate.skin.CustomSDCardLoader
 com/tcn/romate/skin/TcnSkinEditText.java

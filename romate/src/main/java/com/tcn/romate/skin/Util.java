@@ -2,6 +2,7 @@ package com.tcn.romate.skin;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.text.SpannedString;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -94,7 +95,13 @@ public class Util {
     public static String getSkinText(Context context, int resId) {
         int targetResId = SkinCompatResources.getInstance().getTargetResId(context, resId);
         if (targetResId != 0) {
-            return (String) SkinCompatResources.getInstance().getSkinResources().getText(targetResId);
+            if(SkinCompatResources.getInstance().getSkinResources().getText(targetResId) instanceof String){
+                return (String) SkinCompatResources.getInstance().getSkinResources().getText(targetResId);
+            }else if(SkinCompatResources.getInstance().getSkinResources().getText(targetResId) instanceof SpannedString) {
+                return  SkinCompatResources.getInstance().getSkinResources().getText(targetResId).toString();
+            }else {
+                return  SkinCompatResources.getInstance().getSkinResources().getText(targetResId).toString();
+            }
         }
         return "";
     }

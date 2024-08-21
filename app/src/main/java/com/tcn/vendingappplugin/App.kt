@@ -11,16 +11,6 @@ open class App() : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        LiveDataObserver.getInstance().init(this, object : TcnDataListener {
-            override fun VendEvent(s: String) {
-            }
-            override fun VendEventMachineId(id: String?) {
-            }
 
-            override fun VendEventCoilInfo(data: List<Coil_info>) {
-            }
-            override fun VendEventInfo(vendEventInfo: VendEventInfo?) {
-            }
-        })
     }
 }

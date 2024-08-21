@@ -15,31 +15,10 @@ public class AppJava extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        TcnVendIF.getInstance().registerListener(tcnDataListener);
+
     }
 
 
 
 
-    TcnDataListener tcnDataListener = new TcnDataListener() {
-        @Override
-        public void VendEvent(String s) {
-
-        }
-
-        @Override
-        public void VendEventCoilInfo(List<Coil_info> data) {
-
-        }
-
-        @Override
-        public void VendEventInfo(VendEventInfo vendEventInfo) {
-
-        }
-
-        @Override
-        public void VendEventMachineId(String id) {
-
-        }
-    };
 }

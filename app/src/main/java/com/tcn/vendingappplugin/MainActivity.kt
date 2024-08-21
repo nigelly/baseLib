@@ -18,14 +18,12 @@ class MainActivity : TcnSkinActivity() {
 
     override fun onResume() {
         super.onResume()
-        TcnVendIF.getInstance().registerListener(tcnDataListener)
 
     }
 
 
     override fun onPause() {
         super.onPause()
-        TcnVendIF.getInstance().unregisterListener(tcnDataListener)
 
     }
 
@@ -44,17 +42,5 @@ class MainActivity : TcnSkinActivity() {
         LiveDataObserver.getInstance().selectSlot(1)
     }
 
-
-    var tcnDataListener: TcnDataListener = object : TcnDataListener {
-        override fun VendEvent(s: String) {}
-        override fun VendEventCoilInfo(data: List<Coil_info>) {
-
-        }
-        override fun VendEventInfo(vendEventInfo: VendEventInfo) {
-            if(vendEventInfo.m_iEventID != 34)
-            Log.d("print","activity = " + vendEventInfo)
-        }
-        override fun VendEventMachineId(id: String) {}
-    }
 
 }

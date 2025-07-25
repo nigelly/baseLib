@@ -67,7 +67,6 @@ public class Coil_info implements Parcelable {
     private boolean isInventory = false; //蛇形机库存容量开关
 
 
-
     public boolean isInventory() {
         return isInventory;
     }
@@ -83,20 +82,22 @@ public class Coil_info implements Parcelable {
     public int getID() {
         return ID;
     }
+
     public void setID(int iD) {
         ID = iD;
     }
+
     public int getCoil_id() {
         return Coil_id;
     }
+
     public void setCoil_id(int coil_id) {
         Coil_id = coil_id;
     }
+
     public String getPar_name() {
         if (null == Par_name) {
             Par_name = "";
-        } else if (Par_name.length() > 20) {
-            return Par_name.substring(0,20);
         }
         return Par_name;
     }
@@ -104,42 +105,53 @@ public class Coil_info implements Parcelable {
     public void setPar_name(String par_name) {
         Par_name = par_name;
     }
+
     public int getExtant_quantity() {
         return Extant_quantity;
     }
+
     public void setExtant_quantity(int extant_quantity) {
         Extant_quantity = extant_quantity;
     }
+
     public int getWork_status() {
         return Work_status;
     }
+
     public void setWork_status(int work_status) {
         Work_status = work_status;
     }
+
     public int getRay() {
         return ray;
     }
+
     public void setRay(int ray) {
         this.ray = ray;
     }
+
     public String getContent() {
         if (null == Content) {
             Content = "";
         }
         return Content;
     }
+
     public void setContent(String content) {
         Content = content;
     }
+
     public String getPar_price() {
         if (null == Par_price) {
             Par_price = "";
         }
         return Par_price;
     }
+
     public void setPar_price(String par_price) {
         Par_price = par_price;
     }
+
     public String getImg_url() {
         if (null == Img_url) {
             Img_url = "";
@@ -150,6 +162,7 @@ public class Coil_info implements Parcelable {
     public String getSalePrice() {
         return Sale_price;
     }
+
     public void setSalePrice(String par_price) {
         Sale_price = par_price;
     }
@@ -180,6 +193,7 @@ public class Coil_info implements Parcelable {
     public int getSaleNum() {
         return iSaleNum;
     }
+
     public void setSaleNum(int saleNum) {
         iSaleNum = saleNum;
     }
@@ -187,6 +201,7 @@ public class Coil_info implements Parcelable {
     public void setSaleAmount(String amount) {
         dSaleAmount = amount;
     }
+
     public String getSaleAmount() {
         if (null == dSaleAmount) {
             dSaleAmount = "";
@@ -200,6 +215,7 @@ public class Coil_info implements Parcelable {
         }
         return strGoodsCode;
     }
+
     public void setGoodsCode(String goodsCode) {
         strGoodsCode = goodsCode;
     }
@@ -335,6 +351,7 @@ public class Coil_info implements Parcelable {
     public int getSlt_hvgs() {
         return m_iSlt_hvgs;
     }
+
     public void setSlt_hvgs(int hvgs) {
         m_iSlt_hvgs = hvgs;
     }
@@ -342,6 +359,7 @@ public class Coil_info implements Parcelable {
     public int getBack() {
         return m_iBack;
     }
+
     public void setBack(int back) {
         this.m_iBack = back;
     }
@@ -512,23 +530,19 @@ public class Coil_info implements Parcelable {
         parcel.writeInt(iVerifyAge);
     }
 
-    public static final Creator<Coil_info> CREATOR = new Creator<Coil_info>()
-    {
+    public static final Creator<Coil_info> CREATOR = new Creator<Coil_info>() {
         @Override
-        public Coil_info[] newArray(int size)
-        {
+        public Coil_info[] newArray(int size) {
             return new Coil_info[size];
         }
 
         @Override
-        public Coil_info createFromParcel(Parcel in)
-        {
+        public Coil_info createFromParcel(Parcel in) {
             return new Coil_info(in);
         }
     };
 
-    public Coil_info(Parcel in)
-    {
+    public Coil_info(Parcel in) {
         ID = in.readInt();
         Coil_id = in.readInt();
         Par_name = in.readString();
